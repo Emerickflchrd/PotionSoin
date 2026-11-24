@@ -17,14 +17,14 @@
  */
 class Program
 {
-    int healthPoints = 50;
-    int healingAmmount = 30;
     static void Main(string[] args)
     {
-        
+        UsePotion(50, 30);
+        UsePotion(20, 50);
     }
-    static void UsePotion()
+    static void UsePotion(int healthPoints, int healingAmount)
     {
-        Console.WriteLine("")
+        int newHealth = healthPoints + healingAmount;
+        Console.WriteLine("Le joueur possède maintenant " + newHealth + "PV.");
     }
 }
